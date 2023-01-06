@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-rule-no-trailing-slash-in-links",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The markdownlint rule to check if there is trailing slash in links",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
   "license": "MIT",
   "packageManager": "yarn@3.3.0",
   "files": [
+    "CHANGELOG.md",
     "src/*"
   ],
   "dependencies": {

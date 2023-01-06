@@ -31,10 +31,10 @@ module.exports = {
           inLink = false;
           if (hasTrailingSlash) {
             let context = `[${linkText}]`;
+            const normalLinkRegex = new RegExp(`${escapeForRegExp(context)}\\((${escapeForRegExp(linkUrl)})\\)`);  // Match: [Title](URL)
+            const bareLinkRegex = new RegExp(`<(${escapeForRegExp(linkUrl)})>`);  // Match: <URL>
             // Match Markdown link
-            const match = child.line.match(
-              new RegExp(`${escapeForRegExp(context)}\\((${escapeForRegExp(linkUrl)})\\)`)
-            );
+            const match = child.line.match(normalLinkRegex) || child.line.match(bareLinkRegex);
             if (match) {
               let trailingSlashIndex = match.index + match[0].length - 1;
               let trailingSlashLen = 1;
