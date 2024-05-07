@@ -12,6 +12,7 @@
   "repository": "github:xiaogaozi/markdownlint-rule-no-trailing-slash-in-links",
   "license": "MIT",
   "packageManager": "yarn@3.3.0",
+  "main": "src/no-trailing-slash-in-links.js"
   "files": [
     "CHANGELOG.md",
     "src/*"
