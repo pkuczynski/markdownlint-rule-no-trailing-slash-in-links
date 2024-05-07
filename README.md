@@ -17,7 +17,7 @@ Edit `.markdownlint-cli2.jsonc`, add `markdownlint-rule-no-trailing-slash-in-lin
 ```json
 {
   "customRules": [
-    "markdownlint-rule-no-trailing-slash-in-links/src/no-trailing-slash-in-links.js"
+    "markdownlint-rule-no-trailing-slash-in-links"
   ],
   "config": {
     "no-trailing-slash-in-links": true
